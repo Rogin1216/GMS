@@ -12,7 +12,7 @@ class SubjectsController extends Controller
     	return view('subjects.index')->with('subjects', $subjects);
     }
     public function store(){
-    	return view('subjects.add');
+    	return view('subjects.strandshow');
     }
     public function create()
     {

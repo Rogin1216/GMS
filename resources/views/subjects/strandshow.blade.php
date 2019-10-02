@@ -24,5 +24,26 @@
 		    </ul>
 		  </div>
 		</nav>
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">ID</th>
+					<th scope="col">Strand</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach($subjects as $subjects)
+					<tr>
+						<td>{{ $subjects->id }}</td>
+						<td>{{ $subjects->name }}</td>
+						<td>
+							<a href="/subjects//{{ $subjects->id }}/edit">Edit</a>
+						</td>
+					</tr>
+				@endforeach
+			</tbody>
+		</table>
+		<a class="btn btn-primary" href='/subjects/{{ $project->id }}/tasks'>Add a new Task</a>
 	</div>
 @endsection

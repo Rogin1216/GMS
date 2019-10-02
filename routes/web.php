@@ -11,5 +11,5 @@
 |
 */
 Route::get('/subjects', 'SubjectsController@index');
-Route::get('/subjects/add', 'SubjectsController@create');
+Route::get('/subjects/add', 'SubjectsController@store');
 
