@@ -28,15 +28,15 @@
 			<thead>
 				<tr>
 					<th scope="col">ID</th>
-					<th scope="col">Strand</th>
+					<th scope="col">Teacher</th>
 					<th>Actions</th>
 				</tr>
 			</thead>
 			<tbody>
-				@foreach($subjects as $subjects)
+				@foreach($teachers as $teachers)
 					<tr>
-						<td>{{ $subjects->id }}</td>
-						<td>{{ $subjects->name }}</td>
+						<td>{{ $teachers->id }}</td>
+						<td>{{ $teachers->name }}</td>
 						<td>
 							<a href="/subjects//{{ $subjects->id }}/edit">Edit</a>
 						</td>
@@ -45,13 +45,5 @@
 			</tbody>
 		</table>
 		<a class="btn btn-primary" href='/subjects/{{ $project->id }}/tasks'>Add a new Task</a>
-		<form>
-			<input value="{{$teacher->id}} "type="hidden" name="id">
-			<select name="advisory_section">
-				@foreach($sections as $section)
-				<option value="{{$section->id}}">{{$section->name}}</option>
-				@endforeach
-			</select>
-		</form>
 	</div>
 @endsection

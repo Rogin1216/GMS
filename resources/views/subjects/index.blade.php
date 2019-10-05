@@ -12,10 +12,10 @@
 		        <a class="nav-link" href="#">Subject</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Teacher </a>
+		        <a class="nav-link" href="/subjects/teacher">Teacher </a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Section</a>
+		        <a class="nav-link" href="/subjects/addsec">Section</a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="#">Subject Strand </a>
