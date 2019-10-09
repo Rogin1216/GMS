@@ -10,4 +10,7 @@ class StrandController extends Controller
     	$strands = Strand::all();
     	return view('strands.index')->with('strands', $strands);
     }
+    public function create(){
+    	return view('strands.create');
+    }
 }

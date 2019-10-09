@@ -17,6 +17,7 @@ class SectionController extends Controller
 		$sections = Section::all();
     	return view('sections.create')->with('sections', $sections);
 		}
+    
     public function store()
     {
         request()->validate([

@@ -42,6 +42,6 @@
 				@endforeach
 			</tbody>
 		</table>
-		<a class="btn btn-primary" href=''>Add a new Task</a>
+		<a class="btn btn-primary" href='/subjects/strand/create'>Add a new Task</a>
 	</div>
 @endsection

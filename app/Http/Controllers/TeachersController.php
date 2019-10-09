@@ -18,6 +18,8 @@ class TeachersController extends Controller
     	return view('teachers.edit', compact('sections','teacher'));
     	//['sections' => $sections, 'teacher' => $teacher]
     }
-
+    public function create(){
+    	return view('teachers.create');
+    }
 }
  

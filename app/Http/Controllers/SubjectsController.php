@@ -16,10 +16,10 @@ class SubjectsController extends Controller
         $subjects = Subject::all();
         return view('subjects.subjectshow')->with('subjects', $subjects);
     }
-    public function store(){
-    	return view('subjects.strandshow');
+    public function create(){
+    	return view('subjects.create');
     }
-    public function create()
+    public function store()
     {
         request()->validate([
             'name' => 'required',

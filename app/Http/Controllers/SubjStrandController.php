@@ -11,4 +11,8 @@ class SubjStrandController extends Controller
     	$subjectstrand = SubjectStrand::all();
     	return view('subjstrand.index')->with('subjectstrand', $subjectstrand);
     }
+    public function create()
+    {
+    	return view('subjstrand.create');
+    }
 }
