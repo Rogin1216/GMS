@@ -11,6 +11,11 @@ class SubjectsController extends Controller
     	$subjects = Subject::all();
     	return view('subjects.index')->with('subjects', $subjects);
     }
+        public function subjindex()
+    {
+        $subjects = Subject::all();
+        return view('subjects.subjectshow')->with('subjects', $subjects);
+    }
     public function store(){
     	return view('subjects.strandshow');
     }

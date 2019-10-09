@@ -8,9 +8,9 @@ use App\Section;
 
 class TeachersController extends Controller
 {
-    public function show(Teacher $teacher){
+    public function index(Teacher $teacher){
     	$teachers = Teacher::all();
-    	return view('teachers.show')->with('teachers', $teachers);
+    	return view('teachers.index')->with('teachers', $teachers);
     }
 
     public function edit(Teacher $teacher){

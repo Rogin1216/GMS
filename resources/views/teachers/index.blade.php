@@ -28,15 +28,15 @@
 			<thead>
 				<tr>
 					<th scope="col">ID</th>
-					<th scope="col">Subject</th>
+					<th scope="col">Teacher</th>
 					<th>Actions</th>
 				</tr>
 			</thead>
 			<tbody>
-				@foreach($subjects as $subjects)
+				@foreach($teachers as $teachers)
 					<tr>
-						<td>{{ $subjects->id }}</td>
-						<td>{{ $subjects->name }}</td>
+						<td>{{ $teachers->id }}</td>
+						<td>{{ $teachers->name }}</td>
 						<td>
 							<a href="/subjects//{{ $subjects->id }}/edit">Edit</a>
 						</td>
@@ -44,6 +44,6 @@
 				@endforeach
 			</tbody>
 		</table>
-		<a class="btn btn-primary" href=''>Add a new Task</a>
+		<a class="btn btn-primary" href="">Add a new Task</a>
 	</div>
 @endsection

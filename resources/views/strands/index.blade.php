@@ -28,18 +28,16 @@
 			<thead>
 				<tr>
 					<th scope="col">ID</th>
-					<th scope="col">Subject</th>
-					<th>Actions</th>
+					<th scope="col">Strand</th>
+					<th scope="col">Active</th>
 				</tr>
 			</thead>
 			<tbody>
-				@foreach($subjects as $subjects)
+				@foreach($strands as $strands)
 					<tr>
-						<td>{{ $subjects->id }}</td>
-						<td>{{ $subjects->name }}</td>
-						<td>
-							<a href="/subjects//{{ $subjects->id }}/edit">Edit</a>
-						</td>
+						<td>{{ $strands->id }}</td>
+						<td>{{ $strands->name }}</td>
+						<td>{{ $strands->is_active }}</td>
 					</tr>
 				@endforeach
 			</tbody>
