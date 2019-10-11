@@ -10,6 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+//login
+Route::get('/', 'LoginController@login')->name('login');
+Route::post('/login', 'LoginController@authenticate');
+Route::get('/logout', 'LoginController@logout');
 //home
 Route::get('/subjects', 'SubjectsController@index');
 //subjects
@@ -27,6 +32,7 @@ Route::post('/subjects/store', 'SectionController@store');
 //strands
 Route::get('/subjects/strand', 'StrandController@show');
 Route::get('/subjects/strand/create', 'StrandController@create');
+Route::post('/subjects/store', 'StrandController@store');
 //subjectstrand
 Route::get('/subjects/subjstrand', 'SubjStrandController@index');
 Route::get('/subjects/subjstrand/create', 'SubjStrandController@create');

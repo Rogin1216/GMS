@@ -24,7 +24,7 @@ class SubjectsController extends Controller
         request()->validate([
             'name' => 'required',
         ]);
-        
+
     	$subjects = new Subjects;
     	$subjects->name = request()->name;
     	$subjects->save();

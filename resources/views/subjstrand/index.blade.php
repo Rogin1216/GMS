@@ -20,8 +20,8 @@
 		      <li class="nav-item">
 		        <a class="nav-link" href="/subjects/subjstrand">Subject Strand </a>
 		      </li>
-
 		    </ul>
+		    <a class="btn btn-danger" href='/logout'>Log out</a>
 		  </div>
 		</nav>
 		<table class="table">

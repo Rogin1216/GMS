@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('content')
 	<div class="container">
-		<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+		<nav class="navbar navbar-expand-lg navbar-light " style="background-color: #e3f2fd;">
 		  <a class="navbar-brand" href="/subjects">GMS</a>
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 		    <ul class="navbar-nav mr-auto">
@@ -20,8 +20,8 @@
 		      <li class="nav-item">
 		        <a class="nav-link" href="/subjects/subjstrand">Subject Strand </a>
 		      </li>
-
 		    </ul>
+		    <a class="btn btn-danger" href='/logout'>Log out</a>
 		  </div>
 		</nav>
 	</div>

@@ -20,8 +20,8 @@
 		      <li class="nav-item">
 		        <a class="nav-link" href="/subjects/subjstrand">Subject Strand </a>
 		      </li>
-
 		    </ul>
+		    <a class="btn btn-danger" href='/logout'>Log out</a>
 		  </div>
 		</nav>
 		<table class="table">
@@ -29,7 +29,6 @@
 				<tr>
 					<th scope="col">ID</th>
 					<th scope="col">Strand</th>
-					<th scope="col">Active</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -37,7 +36,6 @@
 					<tr>
 						<td>{{ $strands->id }}</td>
 						<td>{{ $strands->name }}</td>
-						<td>{{ $strands->is_active }}</td>
 					</tr>
 				@endforeach
 			</tbody>

@@ -13,4 +13,16 @@ class StrandController extends Controller
     public function create(){
     	return view('strands.create');
     }
+    public function store()
+    {
+        request()->validate([
+            'name' => 'required',
+        ]);
+
+    	$strands = new Strand;
+    	$strands->name = request()->name;
+    	$strands->save();
+
+    	return redirect('/subjects/strand');
+    }
 }
